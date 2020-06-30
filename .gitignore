@@ -12,4 +12,7 @@ package-lock.json
 
 #Eslint
 .eslintrc.json
+
+.env
 /*.env
+node_modules
