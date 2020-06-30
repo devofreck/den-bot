@@ -2,7 +2,7 @@
 
 // Module/Config/API Imports
 const Discord = require("discord.js");
-const config = require("./config.json");
+const config = require('dotenv').config({path: __dirname + '/.env'});
 const fs = require("fs");
 
 // Bot Creation
@@ -71,4 +71,4 @@ fs.readdir("./commands/", (err, files) => {
     client.commands.set(commandName, props);
   });
 });
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);

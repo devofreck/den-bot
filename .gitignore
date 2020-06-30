@@ -12,3 +12,4 @@ package-lock.json
 
 #Eslint
 .eslintrc.json
+/*.env
